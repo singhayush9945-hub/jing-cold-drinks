@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Jing Cold Drinks – ice-cold, bubbly, bursting with flavor." />
+  <title>Jing Cold Drinks – Chill Harder</title>
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+  <canvas id="scene" aria-hidden="true"></canvas>
+  <header class="nav">
+    <a class="logo" href="#hero">JING<span>❄</span></a>
+    <nav>
+      <a href="#flavors">Flavors</a>
+      <a href="#about">About</a>
+      <a href="#contact" class="btn small">Order</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero" class="panel hero">
+      <div class="copy">
+        <p class="eyebrow">Ice-cold · Extra fizzy</p>
+        <h1>Chill <em>harder</em> with Jing.</h1>
+        <p class="lead">Crisp, bubbly cold drinks made to beat the heat. Pop the can, feel the freeze.</p>
+        <a href="#flavors" class="btn">Explore flavors</a>
+        <a href="#contact" class="btn ghost">Find us</a>
+      </div>
+    </section>
+
+    <section id="flavors" class="panel">
+      <h2>Pick your flavor</h2>
+      <p class="sub">Tap a flavor — the can changes with you.</p>
+      <div class="cards" id="cards"></div>
+    </section>
+
+    <section id="about" class="panel about">
+      <div class="copy">
+        <h2>Born cold. Served fresh.</h2>
+        <p>Jing started with one simple idea: a cold drink should taste as good as the first sip on a hot day. We chill every batch, balance real fruit flavor with sparkling fizz, and keep it affordable for everyone.</p>
+        <ul class="stats">
+          <li><b>0°C</b><span>served chilled</span></li>
+          <li><b>5</b><span>bold flavors</span></li>
+          <li><b>100%</b><span>refreshing</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" class="panel contact">
+      <h2>Stock Jing in your shop</h2>
+      <p class="sub">Retailer, café or just thirsty? Say hello.</p>
+      <form id="form" class="form">
+        <input name="name" placeholder="Your name" required aria-label="Your name" />
+        <input name="email" type="email" placeholder="Email" required aria-label="Email" />
+        <textarea name="msg" rows="3" placeholder="How can we help?" aria-label="Message"></textarea>
+        <button class="btn" type="submit">Send message</button>
+        <p id="status" role="status"></p>
+      </form>
+    </section>
+  </main>
+  <footer>© <span id="yr"></span> Jing Cold Drinks. Drink responsibly cold.</footer>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
